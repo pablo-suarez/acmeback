@@ -15,7 +15,7 @@ class VehicleController extends Controller
     public function index()
     {
         //
-        $vehicles =vehicle::get();
+        $vehicles =vehicle::with('owner','driver','kind_vehicle')->get();
         echo json_encode($vehicles);
     }
 
