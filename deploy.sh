@@ -1,3 +1,3 @@
 #Run Database
 
-php artisan migrate:fresh
+php artisan migrate:fresh --force
